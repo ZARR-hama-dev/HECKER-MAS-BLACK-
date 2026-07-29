@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cyber Dashboard</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:linear-gradient(180deg,#050505,#081323,#2b0606);
+color:#fff;
+padding:20px;
+padding-bottom:90px;
+}
+
+.container{
+max-width:430px;
+margin:auto;
+}
+
+.profile{
+display:flex;
+align-items:center;
+background:#10131d;
+padding:15px;
+border-radius:20px;
+border:1px solid #2f7cff;
+box-shadow:0 0 20px rgba(47,124,255,.25);
+margin-bottom:20px;
+}
+
+.profile img{
+width:70px;
+height:70px;
+border-radius:50%;
+margin-right:15px;
+border:2px solid #ff3030;
+object-fit:cover;
+}
+
+.profile h2{
+font-size:21px;
+margin-bottom:5px;
+}
+
+.profile p{
+font-size:14px;
+color:#b5c7ff;
+}
+
+.banner{
+background:#10131d;
+border-radius:20px;
+padding:20px;
+border:1px solid #ff3030;
+text-align:center;
+margin-bottom:20px;
+}
+
+.banner h1{
+font-size:24px;
+margin-bottom:10px;
+}
+
+.banner p{
+color:#9fb4ff;
+font-size:14px;
+}
+
+.status{
+margin-top:15px;
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:10px;
+}
+
+.box{
+background:#181818;
+padding:15px;
+border-radius:12px;
+border:1px solid #2f7cff;
+text-align:center;
+}
+
+.box h3{
+font-size:15px;
+margin-bottom:5px;
+}
+
+.box p{
+color:#00ff7f;
+font-size:13px;
+}
+
+.panel{
+background:#10131d;
+padding:20px;
+border-radius:20px;
+border:1px solid #ff3030;
+box-shadow:0 0 20px rgba(255,48,48,.25);
+}
+
+.panel h2{
+margin-bottom:15px;
+}
+
+.menu-grid{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:15px;
+margin-top:20px;
+}
+
+.menu-card{
+background:#181818;
+border:1px solid #2f7cff;
+border-radius:15px;
+padding:18px;
+text-align:center;
+transition:.3s;
+}
+
+.menu-card:hover{
+transform:scale(1.05);
+border-color:#ff3030;
+}
+
+.menu-card i{
+display:block;
+font-size:30px;
+color:#2f7cff;
+margin-bottom:10px;
+}
+
+.menu-card span{
+font-size:14px;
+}
+
+.bottom{
+position:fixed;
+bottom:0;
+left:0;
+right:0;
+background:#111;
+display:flex;
+justify-content:space-around;
+padding:12px 0;
+border-top:2px solid #2f7cff;
+}
+
+.bottom a{
+color:#fff;
+text-decoration:none;
+text-align:center;
+font-size:13px;
+}
+
+.bottom i{
+display:block;
+font-size:22px;
+margin-bottom:5px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="profile">
+
+<img src="https://files.catbox.moe/9h0poh.jpg">
+
+<div>
+<h2>Cyber Dashboard</h2>
+<p>Role : Administrator</p>
+<p>Status : Online</p>
+</div>
+
+</div>
+
+<div class="banner">
+
+<h1>🛡 SYSTEM MONITOR</h1>
+
+<p>Security Dashboard Interface</p>
+
+<div class="status">
+
+<div class="box">
+<h3>Firewall</h3>
+<p>ACTIVE</p>
+</div>
+
+<div class="box">
+<h3>Database</h3>
+<p>ONLINE</p>
+</div>
+
+<div class="box">
+<h3>Network</h3>
+<p>CONNECTED</p>
+</div>
+
+<div class="box">
+<h3>Server</h3>
+<p>RUNNING</p>
+</div>
+
+</div>
+
+</div>
+
+<div class="panel">
+
+<h2>⚙ Dashboard Menu</h2><div class="menu-grid">
+
+<div class="menu-card">
+<i class="fa-solid fa-network-wired"></i>
+<span>Network Monitor</span>
+</div>
+
+<div class="menu-card">
+<i class="fa-solid fa-shield-halved"></i>
+<span>Security Check</span>
+</div>
+
+<div class="menu-card">
+<i class="fa-solid fa-globe"></i>
+<span>IP Lookup</span>
+</div>
+
+<div class="menu-card">
+<i class="fa-solid fa-location-dot"></i>
+<span>Location Map</span>
+</div>
+
+<div class="menu-card">
+<i class="fa-solid fa-server"></i>
+<span>Server Status</span>
+</div>
+
+<div class="menu-card">
+<i class="fa-solid fa-database"></i>
+<span>Database</span>
+</div>
+
+<div class="menu-card">
+<i class="fa-solid fa-hard-drive"></i>
+<span>Storage</span>
+</div>
+
+<div class="menu-card">
+<i class="fa-solid fa-cloud"></i>
+<span>Cloud Panel</span>
+</div>
+
+<div class="menu-card">
+<i class="fa-solid fa-wifi"></i>
+<span>WiFi Analyzer</span>
+</div>
+
+<div class="menu-card">
+<i class="fa-solid fa-terminal"></i>
+<span>Terminal</span>
+</div>
+
+<div class="menu-card">
+<i class="fa-solid fa-code"></i>
+<span>Developer</span>
+</div>
+
+<div class="menu-card">
+<i class="fa-solid fa-bug"></i>
+<span>Bug Report</span>
+</div>
+
+<div class="menu-card">
+<i class="fa-solid fa-chart-line"></i>
+<span>Analytics</span>
+</div>
+
+<div class="menu-card">
+<i class="fa-solid fa-chart-pie"></i>
+<span>Statistics</span>
+</div>
+
+<div class="menu-card">
+<i class="fa-solid fa-microchip"></i>
+<span>System Info</span>
+</div>
+
+<div class="menu-card">
+<i class="fa-solid fa-user-shield"></i>
+<span>User Security</span>
+</div>
+
+<div class="menu-card">
+<i class="fa-solid fa-key"></i>
+<span>Access Keys</span>
+</div>
+
+<div class="menu-card">
+<i class="fa-solid fa-lock"></i>
+<span>Encryption</span>
+</div>
+
+<div class="menu-card">
+<i class="fa-solid fa-file-shield"></i>
+<span>File Security</span>
+</div>
+
+<div class="menu-card">
+<i class="fa-solid fa-gear"></i>
+<span>Settings</span>
+</div>
+
+</div></div>
+
+<div class="bottom">
+
+<a href="#">
+<i class="fa-solid fa-house"></i>
+Home
+</a>
+
+<a href="#">
+<i class="fa-solid fa-table-columns"></i>
+Dashboard
+</a>
+
+<a href="#">
+<i class="fa-solid fa-chart-line"></i>
+Analytics
+</a>
+
+<a href="#">
+<i class="fa-solid fa-user"></i>
+Profile
+</a>
+
+</div>
+
+<script>
+
+const cards = document.querySelectorAll(".menu-card");
+
+cards.forEach(card=>{
+card.addEventListener("click",function(){
+
+this.style.borderColor="#00ff7f";
+
+setTimeout(()=>{
+this.style.borderColor="#2f7cff";
+},300);
+
+});
+});
+
+</script>
+
+</body>
+</html>
